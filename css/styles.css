@@ -1,0 +1,83 @@
+body {
+    height: 100vh;
+    background: #e4e3e35c;
+}
+
+header {
+    background: #692c2c56;
+}
+
+footer {
+    background: #692c2c56;
+}
+
+#div_frame {
+    resize: both;
+    overflow: auto;
+    width: 300px;
+    height: 525px;
+    max-width: 600px;
+    /* background-color: #0229635c; */
+}
+
+#div_root {
+    /* background: rgb(177, 179, 167); */
+}
+
+#div_background {
+    overflow: hidden;
+    /* background: aqua; */
+}
+
+#div_foreground {
+    overflow: hidden;
+}
+
+#div_foreground_gradient {}
+
+#div_foreground_alpha {}
+
+#div_text {
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+}
+
+#span_text {
+    color: white;
+    font-size: larger;
+    line-height: 1;
+    font-weight: 500;
+}
+
+#div_controls {
+    width: 300px;
+    padding: 10px;
+    overflow-x: auto;
+}
+
+#div_main_box {
+    max-width: 1000px;
+    min-width: 625px;
+    background-color: bisque
+}
+
+#div_left_box {
+    background-color: aquamarine
+}
+
+#div_right_box {
+    background-color: bisque;
+    overflow-x: auto;
+}
+
+.control_title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.my_file_label {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <!-- CSS -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery and Knockout.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
+    <script src="./js/jquery.resize.js"></script>
+    <script src="./js/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
+
+<body>
+    <main class="d-flex w-100 h-100 justify-content-center align-items-center">
+        <div id="div_main_box" class="d-flex w-75 h-100 d-flex justify-content-center align-items-center">
+
+            <div id="div_left_box" class="col w-100 h-100 d-flex justify-content-center align-items-center">
+
+                <div id="div_frame">
+                    <div id="div_root" class="position-relative w-100 h-100">
+                        <div id="div_background" class="position-absolute w-100 h-100">
+                            <img id="img_background" data-bind="attr: { src: imgBackground }"
+                                class="position-relative" />
+                        </div>
+                        <div id="div_foreground" class="position-absolute">
+                            <img id="img_foreground" data-bind="attr: { src: imgForeground }"
+                                class="position-relative" />
+                        </div>
+                        <div id="div_foreground_gradient" data-bind="style: { background: gradientBackground }"
+                            class="position-absolute w-100 h-100">
+                        </div>
+                        <div id="div_foreground_alpha" data-bind="style: { background: maskColor, opacity: maskAlpha }"
+                            class="position-absolute w-100 h-100">
+                        </div>
+                        <div id="div_text" class="position-absolute d-flex justify-content-center align-items-center">
+                            <span id="span_text" data-bind="text: message" class="text-center"></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="div_right_box" class="h-100 flex-row d-flex justify-content-center align-items-center">
+                <div id="div_controls">
+                    <span class="control_title w-100">Background</span>
+                    <div class="custom-file my-custom-file w-100">
+                        <label id="labelSelectBackground" class="custom-file-label my_file_label" for="file-background">
+                            Selecione
+                        </label>
+                        <input type="file" class="custom-file-input" id="file-background">
+                    </div>
+
+                    <span class="control_title w-100">Foreground</span>
+                    <div class="custom-file my-custom-file w-100">
+                        <label id="labelSelectForeground" class="custom-file-label my_file_label" for="file-foreground">
+                            Selecione
+                        </label>
+                        <input type="file" class="custom-file-input" id="file-foreground">
+                    </div>
+
+                    <div class="form-check">
+                        <input id="radio_fill" class="form-check-input" type="radio" name="radioFillType" checked>
+                        <label class="form-check-label" for="radio_fill">
+                            FILL
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input id="radio_fit" class="form-check-input" type="radio" name="radioFillType">
+                        <label class="form-check-label" for="radio_fit">
+                            FIT
+                        </label>
+                    </div>
+
+                    <br /><span class="control_title w-100">Gradiente</span>
+                    <input id="input_gradient_color" data-bind="textInput: gradientColor" type="text"
+                        class="form-control" placeholder="#FFFFFF">
+
+                    <span class="control_title w-100">Mask Color</span>
+                    <input id="input_mask_color" data-bind="textInput: maskColor" type="text" class="form-control"
+                        placeholder="#FFFFFA">
+
+                    <span class="control_title w-100">Mask Alpha</span>
+                    <input id="input_mask_alpha" data-bind="textInput: maskAlpha" type="text" class="form-control"
+                        placeholder="0.0 ~ 1">
+
+                    <span class="control_title w-100">Mensagem</span>
+                    <input id="input_message" data-bind="textInput: message" type="text" class="form-control"
+                        placeholder="Mensagem ...">
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+</body>
+
+</html>

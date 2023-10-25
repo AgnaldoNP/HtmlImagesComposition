@@ -20,8 +20,8 @@
 
             <div id="div_left_box" class="col w-100 h-100 d-flex justify-content-center align-items-center">
 
-                <div id="div_frame">
-                    <div id="div_root" class="position-relative w-100 h-100">
+                <div id="div_frame" class="d-flex flex-column">
+                    <div id="div_background_composition" class="position-relative flex-grow-1">
                         <div id="div_background" class="position-absolute w-100 h-100">
                             <img id="img_background" data-bind="attr: { src: imgBackground }"
                                 class="position-relative" />
@@ -38,6 +38,20 @@
                         </div>
                         <div id="div_text" class="position-absolute d-flex justify-content-center align-items-center">
                             <span id="span_text" data-bind="text: message" class="text-center"></span>
+                        </div>
+                    </div>
+
+                    <div id="div_controls_page" data-bind="style: {background: backgroundColor}" class="w-100 p-2">
+                        <button class="btn primary_button w-100 button_font" style="color:black">Entrar</button>
+                        <div class="w-100 d-flex flex-row pt-2">
+                            <button class="btn primary_button flex-grow-1 mr-1 button_font_small bg-white"
+                                style="color:black">
+                                Solicite seu Cartão
+                            </button>
+                            <button class="btn primary_button flex-grow-1 ml-1 button_font_small bg_primary_dark"
+                                style="color:white">
+                                Precisa de Ajuda?
+                            </button>
                         </div>
                     </div>
                 </div>

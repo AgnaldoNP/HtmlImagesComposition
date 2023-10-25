@@ -14,19 +14,25 @@ footer {
 #div_frame {
     resize: both;
     overflow: auto;
-    width: 300px;
-    height: 525px;
+    width: 360px;
+    height: 640px;
     max-width: 600px;
     /* background-color: #0229635c; */
 }
 
-#div_root {
-    /* background: rgb(177, 179, 167); */
+#div_controls_page {
+    background-color: bisque;
+    /* height: 120px; */
+    resize: horizontal;
+    overflow: auto;
+}
+
+#div_background_composition {
+    overflow: hidden;
 }
 
 #div_background {
     overflow: hidden;
-    /* background: aqua; */
 }
 
 #div_foreground {
@@ -80,4 +86,23 @@ footer {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.button_font {
+    font-size: 0.9em;
+}
+
+.button_font_small {
+    font-size: 0.7em;
+}
+
+.primary_button {
+    color: #fff;
+    background-color: #BADA2E;
+    border-color: #BADA2E;
+}
+
+.bg_primary_dark {
+    background-color: #255B0D;
+    border-color: #255B0D;
 }

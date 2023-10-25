@@ -24,6 +24,7 @@ $(document).ready(function () {
         self.imgForeground = ko.observable("");
         self.gradientColor = ko.observable("#40A017");
         self.maskColor = ko.observable("#40A017");
+        self.backgroundColor = ko.observable("#40A017");
         self.maskAlpha = ko.observable(0);
         self.message = ko.observable("");
 
@@ -43,6 +44,17 @@ $(document).ready(function () {
                     + ", " + colorAlpha4
                     + ", " + colorAlpha5
                     + ", " + colorAlpha6
+                    + ", #FFF0"
+                    + ", #FFF0"
+                    + ", #FFF0"
+                    + ", #FFF0"
+                    + ", #FFF0"
+                    + ", #FFF0"
+                    + ", #FFF0"
+                    + ", #FFF0"
+                    + ", #FFF0"
+                    + ", #FFF0"
+                    + ", #FFF0"
                     + ", #FFF0"
                     + ", #FFF0"
                     + ", #FFF0"
@@ -84,8 +96,8 @@ $(document).ready(function () {
         $('#radio_fit').change(function () { scaleType = "fit"; setupSizes() });
 
         function setupSizes() {
-            let width = $('#div_frame').width()
-            let height = $('#div_frame').height()
+            let width = $('#div_background_composition').width()
+            let height = $('#div_background_composition').height()
 
             function fillImage(imgElement) {
                 let bgWidth = imgElement.width()
